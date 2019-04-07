@@ -31,7 +31,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Roboto:300,400' rel='stylesheet' type='text/css'>
 
 
-    <link rel="stylesheet" href="{% static 'css/table.css'%}">
+    <!--<link rel="stylesheet" href="{% static 'css/table.css'%}">-->
 
 
 	<!-- Animate.css -->
@@ -151,7 +151,7 @@
             <table class="main-table">
                 <!--<tr><th>№</th><th><a href="#" id="sort_name">Наименование</a></th><th>Описание</th><th><a href="#" id="sort_cost">Цена</a></th><th>-->
                {% for name,body,cost,place,categ in tasks %}
-                   <tr><td>12</td><td>{{ name }}</td><td>{{ body }}</td><td>{{ cost }}</td></tr>
+                   <tr><td>{{ forloop.counter }}</td><td>{{ name }}</td><td>{{ body }}</td><td>{{ cost }}</td><td><a href="{% url "index" %}" class="btn btn-primary">Подробнее</a></td></tr>
                 {% endfor %}
             </table>
         </section>
