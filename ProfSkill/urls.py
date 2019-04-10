@@ -19,6 +19,8 @@ from django.conf.urls import url,include
 from django.conf.urls.static import static
 from django.conf import settings
 from skill import views
+from django.contrib.contenttypes.models import ContentType
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
