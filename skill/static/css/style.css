@@ -532,7 +532,7 @@ footer .social {
 /* Dialog Section */
 .dialog_1{
   position: fixed;
-  top: 600px;
+  top: 500px;
   right: 50px;
   z-index: 100;
   border: 1px solid #52d3aa;
